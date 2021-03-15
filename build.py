@@ -35,14 +35,11 @@ prefixed_fonts = [
   'fonts/codeface/fonts/hack/*.ttf',
 
   # SIL OFL with no Reserved Font Name
-  'fonts/codeface/fonts/edlo/*.ttf',
-  'fonts/codeface/fonts/fantasque-sans-mono/*.ttf',
-  'fonts/codeface/fonts/inconsolata/*.ttf',
+  # 'fonts/codeface/fonts/edlo/*.ttf',
+  # 'fonts/codeface/fonts/fantasque-sans-mono/*.ttf',
+  # 'fonts/codeface/fonts/inconsolata/*.ttf',
 
   'fonts/firacode/*.ttf',
-  'fonts/urbanist/*.ttf',
-  'fonts/manrope/*.ttf',
-  'fonts/roboto/*.ttf',
   'fonts/opensans/*.ttf',
 ]
 
@@ -54,17 +51,17 @@ prefixed_fonts = [
 renamed_fonts = {
   # This doesn't have a reserved name, but if we don't rename it it'll collide
   # with its sibling Fantasque Sans Mono Normal, listed above.
-  'fonts/FantasqueSansMono-NoLoopK/*.otf': 'Liga Fantasque Sans Mono NoLoopK',
+  # 'fonts/FantasqueSansMono-NoLoopK/*.otf': 'Liga Fantasque Sans Mono NoLoopK',
 
-  # SIL OFL with reserved name
-  'fonts/codeface/fonts/anonymous-pro/*.ttf': 'Liganymous',
-  'fonts/plex/IBM-Plex-Mono/fonts/complete/ttf/*.ttf': 'Ligalex Mono',
-  'fonts/codeface/fonts/oxygen-mono/*.otf': 'Liga O2 Mono',
-  'fonts/codeface/fonts/source-code-pro/*.ttf': 'LigaSrc Pro',
-  'fonts/SourceCodeVariable*': 'LigaSrc Variable',
+  # # SIL OFL with reserved name
+  # 'fonts/codeface/fonts/anonymous-pro/*.ttf': 'Liganymous',
+  # 'fonts/plex/IBM-Plex-Mono/fonts/complete/ttf/*.ttf': 'Ligalex Mono',
+  # 'fonts/codeface/fonts/oxygen-mono/*.otf': 'Liga O2 Mono',
+  # 'fonts/codeface/fonts/source-code-pro/*.ttf': 'LigaSrc Pro',
+  # 'fonts/SourceCodeVariable*': 'LigaSrc Variable',
 
-  # UFL
-  'fonts/codeface/fonts/ubuntu-mono/*.ttf': 'Ubuntu Mono Ligaturized',
+  # # UFL
+  # 'fonts/codeface/fonts/ubuntu-mono/*.ttf': 'Ubuntu Mono Ligaturized',
 }
 
 #### Fonts we can't ligaturize. ####

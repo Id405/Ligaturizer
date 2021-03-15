@@ -17,15 +17,15 @@ ligatures = [
     },
     {   #ch
         'chars': ['c', 'h'],
-        'firacode_ligature_name': 'afii10089',
+        'firacode_ligature_name': 'U+0447',
     },
     {   #Ch
         'chars': ['C', 'h'],
-        'firacode_ligature_name': 'afii10041',
+        'firacode_ligature_name': 'U+0427',
     },
     {   #CH
         'chars': ['C', 'H'],
-        'firacode_ligature_name': 'afii10041',
+        'firacode_ligature_name': 'U+0427',
     },
     # {
     #     ## These are all the punctuation characters used in Fira Code ligatures.

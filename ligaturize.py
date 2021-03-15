@@ -143,7 +143,9 @@ class LigatureCreator(object):
 
         self._lig_counter += 1
         # ligature_name = 'lig.{}'.format(self._lig_counter)
-        ligature_name = firacode_ligature_name
+        print(firacode_ligature_name)
+        print(self.font[self.font.findEncodingSlot(firacode_ligature_name)])
+        ligature_name = self.font[self.font.findEncodingSlot(firacode_ligature_name)].glyphname
 
         # self.font.createChar(-1, ligature_name)
         self.font.selection.none()
