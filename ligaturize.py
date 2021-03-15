@@ -73,6 +73,8 @@ class LigatureCreator(object):
         advance correction, will be centered instead.
         """
 
+        return
+
         if glyph.width == self.emwidth:
             # No correction needed.
             return
@@ -114,6 +116,8 @@ class LigatureCreator(object):
     def correct_ligature_width(self, glyph):
         """Correct the horizontal advance and scale of a ligature."""
 
+        return
+
         if glyph.width == self.emwidth:
             return
 
@@ -123,8 +127,8 @@ class LigatureCreator(object):
         # resize -- but we may want to adjust the bearings. And we can't just
         # center it, because ligatures are characterized by very large negative
         # left bearings -- they advance 1em, but draw from (-(n-1))em to +1em.
-        scale = float(self.emwidth) / glyph.width
-        glyph.transform(psMat.scale(scale, 1.0))
+        # scale = float(self.emwidth) / glyph.width
+        # glyph.transform(psMat.scale(scale, 1.0))
         glyph.width = self.emwidth
 
     def add_ligature(self, input_chars, firacode_ligature_name):
@@ -138,13 +142,14 @@ class LigatureCreator(object):
             return
 
         self._lig_counter += 1
-        ligature_name = 'lig.{}'.format(self._lig_counter)
+        # ligature_name = 'lig.{}'.format(self._lig_counter)
+        ligature_name = firacode_ligature_name
 
-        self.font.createChar(-1, ligature_name)
+        # self.font.createChar(-1, ligature_name)
         self.font.selection.none()
         self.font.selection.select(ligature_name)
-        self.font.paste()
-        self.correct_ligature_width(self.font[ligature_name])
+        # self.font.paste()
+        # self.correct_ligature_width(self.font[ligature_name])
 
         self.font.selection.none()
         self.font.selection.select('space')
@@ -171,6 +176,9 @@ class LigatureCreator(object):
                 self.font.paste()
 
                 self.font[char].addPosSub(lookup_sub_name(i), cr_name(i))
+
+                glyph = self.font[self.font.findEncodingSlot(cr_name(i))]
+                glyph.width = 0
             else:
                 self.font[char].addPosSub(lookup_sub_name(i), ligature_name)
 

@@ -28,4 +28,8 @@ char_dict = {
     'parenleft': '(',
     'parenright': ')',
     'w': 'w',
+    'thorn': 'þ',
+    'Thorn': 'Þ',
+    'afii10089': 'ч',
+    'afii10041': 'Ч',
 }
