@@ -41,6 +41,7 @@ prefixed_fonts = [
 
   'fonts/firacode/*.ttf',
   'fonts/opensans/*.ttf',
+  'fonts/FiraCodeNerdFont/*.otf'
 ]
 
 #### Fonts that need to be renamed. ####

@@ -27,6 +27,10 @@ ligatures = [
         'chars': ['C', 'H'],
         'firacode_ligature_name': 'U+0427',
     },
+    {   #and
+        'chars': ['a', 'n', 'd'],
+        'firacode_ligature_name': 'ampersand',
+    }
     # {
     #     ## These are all the punctuation characters used in Fira Code ligatures.
     #     ## Use the `--copy-character-glyphs` option to copy these into the output
